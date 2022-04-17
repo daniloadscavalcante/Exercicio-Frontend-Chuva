@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Mochiy+Pop+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Mochiy+Pop+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;700&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;700&display=swap');
 
+:root{
+    --color-primary: #EE7A3A;
+    --box-shadow-video:rgba(141, 53, 6, 0.5);
+    --color-white:#fff;
+    --title-section:#4E4E4E;
+    --paragrafo:#5C5C5C;
+    --background-title:#FDF1EB;
+    --border:#ECECEC;
+    --line-divisao:#E7E7E7;
+    --btnGradiente1:#FEB254;
+    --btnGradiente2:#F0813D;
+    --border-input:#CCCCCC;
+    --background-editar:#EAF1F2;
+    --texto-enviado:#595959;
+    --background-resposta:#F8F8F8;
+    --paragrafo-resposta:#4D4D4D;
+    --colorThird:#725C5C;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,14 +27,13 @@
 a,ul{
     text-decoration: none;
     list-style-type: none;
-    color: #725C5C;
-    
+    color: var(--colorThird);    
 }
 
 body,html{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    color: #725C5C;
+    color: var(--colorThird);
 }
 /*=====header sidebar======*/
 .sidebar-header{    
@@ -57,11 +74,11 @@ body,html{
     padding: 8px;
     margin: 2px 0;    
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--color-white);
     position: relative;
 }
 .menu li:hover{
-    border-left: 5px solid #EE7A3A;
+    border-left: 5px solid var(--color-primary);
     background-color:#FDF1EB; 
 }
 .menu a{
@@ -129,7 +146,7 @@ body,html{
 }
 .titulo-trabalho{
     margin: 20px 0;
-    color:#ED7839;
+    color:var(--color-primary);
     max-width: 784px;
     font-size: 20px;
     font-family: roboto;
@@ -164,7 +181,7 @@ body,html{
     font-weight: 900;
     padding-top: 4%;
     padding-left: 4%;
-    background: rgba(141, 53, 6, 0.5);
+    background: var(--box-shadow-video);
     border-radius: 3px;
     letter-spacing: 0.05em;
 }
@@ -177,7 +194,7 @@ body,html{
 }
 .border-foto-Scott{
     border-radius: 50%;
-    border: 1px solid #ED7839;
+    border: 1px solid var(--color-primary);
     margin-right: 20px;
 }
 .border-foto-Scott img{
@@ -190,7 +207,7 @@ body,html{
     font-family: roboto;
     font-weight: 900;
     letter-spacing: 0.05em;
-    color: #fff;
+    color: var(--color-white);
 }
 .nome-autor p{
     font-family: 'Roboto';
@@ -211,9 +228,9 @@ body,html{
     padding-top: 20px;   
 }
 .button-donwload{
-    background-color:#ED7839;
+    background-color: var(--color-primary);
     border-radius: 4px;
-    color: #fff;
+    color: var(--color-white);
     display: inline-block;
     width: 120px;
     height: 30px;
@@ -222,16 +239,16 @@ body,html{
     font-size: 16px;      
 }
 .buttonIcon{
-    background-color:#ED7839;
+    background-color:var(--color-primary);
     border-radius: 4px;
-    color: #fff;    
+    color: var(--color-white);    
     border: none;
     width: 40px;
     height: 30px;
     cursor: pointer;
 }
 .aside-citacao{
-    color: #ED7839;
+    color: var(--color-primary);
     font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -241,19 +258,19 @@ body,html{
 }
 .titulo-detalhes{
     font-size:20px;
-    color:#4E4E4E;
+    color: var(--title-section);
     font-weight: 500;
     font-style: normal;
-    background-color:#FDF1EB;
+    background-color: var(--background-title);
     padding: 11px 15px 9px 15px;
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--border);
     border-radius: 3px 3px 0px 0px;
 }
 .info-aside{
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--border);
     font-size: 12px;
     font-family: 'Quicksand';
-    color: #5C5C5C;
+    color: var(--paragrafo);
     padding: 15px;
     line-height: 1.5;
     overflow: scroll;
@@ -275,12 +292,12 @@ body,html{
     width: 88%;
     margin: 0 36px;
     margin-top: 30px;
-    border: 1px solid #ECECEC;    
+    border: 1px solid var(--border);    
 }
 .titulo-resumo, .titulo-discussoes{
     display: block;
-    background-color: #FDF1EB;
-    color: #4E4E4E;
+    background-color: var(--background-title);
+    color: var(--title-section);
     font-size: 20px;
     font-weight: 500;
     padding: 10px 15px;
@@ -289,13 +306,13 @@ body,html{
     font-family: 'Quicksand';
     font-style: normal;
     font-size: 14px;
-    color: #5C5C5C;
+    color: var(--paragrafo);
     padding: 15px;
     letter-spacing: 2%;
     line-height: 23px;
 }
 .btn-resumo, .btnOcultar{
-    color:#ED7839;
+    color:var(--color-primary);
     font-weight: 900;
     cursor: pointer;
     display: inline-block;
@@ -310,14 +327,14 @@ body,html{
     width: 88%;
     margin: 0 36px;
     margin-top: 30px;
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--border);
     padding-bottom: 15px;
 }
 .info-discussoes{
     text-align: center;    
 }
 .subtitulo-discussoes{
-    color: #ED7839;
+    color: var(--color-primary);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -335,14 +352,14 @@ body,html{
 .linha-divisao{    
     width: 96.5%;
     margin: auto;    
-    border: 1px solid #E7E7E7;
+    border: 1px solid var(--line-divisao);
     display: inline-block;    
     position: relative;
     top: -25px;
     z-index: -1;
 }
 .button-criar-topico{
-    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    background: linear-gradient(180deg, var(--btnGradiente1) 0%, var(--btnGradiente2) 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
     border: none;
@@ -350,7 +367,7 @@ body,html{
     font-family: 'Quicksand';
     font-weight: 700;
     font-size: 15px;
-    color: #fff;
+    color: var(--color-white);
     
     display:flex;
     align-items: center;
@@ -367,7 +384,7 @@ body,html{
 .section-topico label{
     text-align:left;
     
-    color:#ED7839;
+    color:var(--color-primary);
     font-weight: 700;
     font-size: 16px;
     font-family: 'Roboto';
@@ -376,7 +393,7 @@ body,html{
     margin-top: 10px;
 }
 .subtitulo-novoTopico{
-    color: #5C5C5C;
+    color: var(--paragrafo);
     font-family: 'Quicksand';
     font-style: normal;    
     font-size: 14px;
@@ -389,7 +406,7 @@ label{
 input{
     display: block;  
     width: 100%; 
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--border-input);
     padding: 12px;
     border-radius: 3px;
 }
@@ -402,15 +419,15 @@ input::placeholder{
     display: block;
     resize: none;
     border-radius: 3px 3px 0px 0px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--border-input);
     border-bottom: none;
     margin-top: 5px;
 }
 .box-edit{
-    background-color: #EAF1F2;
+    background-color: var(--background-editar);
     display: flex;
     height: 31px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid var(--border-input);
 }
 .icon-editar-textarea{
     width: 80%;
@@ -434,10 +451,10 @@ input::placeholder{
 }
 .btn-enviar{
     width: 20%;
-    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);    
+    background: linear-gradient(180deg, var(--btnGradiente1) 0%, var(--btnGradiente2) 100%);    
     border: none;
     font-weight: 900;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -450,17 +467,17 @@ input::placeholder{
     font-family: 'roboto';
     font-size: 18px;
     font-weight: 700;
-    color: #ED7839;
+    color: var(--color-primary);
     margin: 20px;
     display: inline-block;
 }
 .paragrafo-texto-enviado{
     font-family: 'Quicksand';
     font-size: 14px;
-    color: #595959;
+    color: var(--texto-enviado);
 }
 .link-trabalhos{
-    color: #F48F44;
+    color: var(--color-primary);
     text-align: center;
     text-decoration-line: underline;
     font-weight: 500;
@@ -470,7 +487,7 @@ input::placeholder{
 .nova-pergunta{
     text-align:left;  
     position: relative;  
-    border: 1px solid #E7E7E7;
+    border: 1px solid var(--border);
     background: rgb(222, 222, 222, .2);
 
 }
@@ -484,18 +501,17 @@ input::placeholder{
     left: 0;
     bottom: 0;
     width: 100%;
-    color: #707070;
+    color: var(--texto-enviado);
     font-weight: 900; 
     font-size: 16px;
     font-family: 'Quicksand';    
 }
 
 .link-editar-topico{
-    color: #ED7839;
+    color: var(--color-primary);
     font-size: 14px;
     text-decoration-line: underline;
-    font-family: 'Roboto';
-    
+    font-family: 'Roboto';    
 }
 
 /*====Section perguntas e Respostas====*/
@@ -506,18 +522,18 @@ input::placeholder{
     padding: 17px 24px 0;
     padding-bottom: 20px;
     font-family: 'Quicksand';
-    border: 1px solid #E7E7E7;
+    border: 1px solid var(--border);
 }
 .box-perguntas h4{    
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    color: #ED7839;
+    color: var(--color-primary);
 }
 .title-autor{      
     font-weight: 500;
     font-size: 12px;    
-    color: #5C5C5C;
+    color: var(--paragrafo);
 }
 .box-perguntas p{
     padding: 10px 0;
@@ -531,14 +547,14 @@ input::placeholder{
 }
 .ponto{
     display: block;
-    background: #ED7839;
+    background: var(--color-primary);
     width:5px;
     height: 5px;
     border-radius:50%;
     margin: 2px 0;
 }
 .icon-coracao{
-    background: #ED7839;
+    background: var(--color-primary);
     display: inline-block;
     padding: 1px 10px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
@@ -552,7 +568,7 @@ input::placeholder{
     cursor: pointer;
 }
 .resposta:hover{
-    color: #ED7839;
+    color: var(--color-primary);
 }
 .box-perguntas, .sectionPergunta2{    
     padding: 17px 24px 20px;
@@ -561,18 +577,18 @@ input::placeholder{
 /*Section de respostas das perguntas*/
 .box-respostas{
     padding: 17px 24px 30px;
-    margin: 0; /*AQUIIIIIIIIIIIIIIIIIII*/
-    border: 1px solid #E7E7E7;
-    background-color: #F8F8F8;
+    margin: 0; 
+    border: 1px solid var(--border);
+    background-color: var(--background-resposta);
     position: relative;
-    color: #4D4D4D;
+    color: var(--paragrafo-resposta);
 }
 .title-negrito{
-    color: #5C5C5C;
+    color: var(--paragrafo);
     font-weight: 700;
 }
 .box-respostas-branco{
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 .check-autor{
     position: absolute;
@@ -580,7 +596,7 @@ input::placeholder{
     right: 10px;
     display: inline-block;
     font-size: 14px;
-    color: #ED7839;
+    color: var(--color-primary);
     font-weight: 700;        
 }
 .check-autor img{
@@ -606,7 +622,7 @@ input::placeholder{
     font-family: 'Quicksand';
     
     padding: 0 20px;
-    border-top: 1px solid #E7E7E7;
+    border-top: 1px solid var(--border);
 }
 .info-texto-footer{
     margin: 20px 0;
@@ -686,9 +702,7 @@ input::placeholder{
     .nome-autor p{        
         font-size: 16px;       
     }
-    .border-foto-Scott{
-        border-radius: 50%;
-        border: 1px solid #ED7839;
+    .border-foto-Scott{       
         margin-right: 20px;
         width: 12%;
     }
@@ -720,8 +734,7 @@ input::placeholder{
         width: 100%;
         max-width: 100%;
         
-        height: auto;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        height: auto;       
     }   
     .top-nome_evento{
         font-size: 25px;           
@@ -735,13 +748,11 @@ input::placeholder{
         max-width: 30%;
     }    
     .foto-logo{
-        background-color: #fff;
+        background-color: var(--color-white);
         display: block;
         padding-bottom: 15px;
     }
-    .notificacao{
-        right: 3px;        
-    }
+    
     /*menu*/   
     .btn-toggle{        
         display: block;
@@ -755,8 +766,8 @@ input::placeholder{
         height: 6px;
         margin: 5px;
         border-radius: 10px;
-        border:1px solid #EE7A3A;
-        background: #fff;
+        border:1px solid var(--color-primary);
+        background: var(--color-white);
         
     }   
     .menu{
@@ -764,7 +775,7 @@ input::placeholder{
         text-align:center;        
         transition: .5s ease;
         padding-bottom: 1px;  
-        background-color: #E7E7E7; 
+        
         position: absolute;
         width: 100%;
         z-index: 3;                   
@@ -776,7 +787,7 @@ input::placeholder{
         margin-top: 0px;         
     }    
     .menu li:hover{       
-        border-right: 5px solid #EE7A3A;  
+        border-right: 5px solid var(--color-primary);  
         transition: .5s linear;       
     }
 
@@ -820,8 +831,7 @@ input::placeholder{
         padding-top: 20px;   
     }
     .info-aside{        
-        font-size: 12px;     
-              
+        font-size: 12px;   
         height: auto;
     }
     .info-aside p:nth-child(5){        
@@ -870,9 +880,7 @@ input::placeholder{
     }  
     .button-criar-topico{       
         padding: 4px 15px;              
-        font-size: 14px; 
-        
-        
+        font-size: 14px;       
     }
     .footer{
         margin-top: 50px;
